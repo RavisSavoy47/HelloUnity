@@ -43,7 +43,7 @@ public class HealthBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_health < 0 && IsAlive)
+        if (_health <= 0 && IsAlive)
             OnDeath();
 
         _isAlive = _health > 0;
